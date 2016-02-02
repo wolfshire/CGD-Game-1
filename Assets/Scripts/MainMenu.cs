@@ -6,18 +6,20 @@ public class MainMenu : MonoBehaviour {
     GUIStyle style;
     GUIStyle button;
     int panel = 0;
-    Texture2D start_button;
-    Texture2D exit_button;
+    public Texture2D logo;
+    public Texture2D play_tex;
+    public Texture2D exit_tex;
 
     // Use this for initialization
     void Start() {
         screen = new Rect(0, 0, Screen.width, Screen.height);
         style = new GUIStyle();
-        style.fontSize = 64;
-        style.alignment = TextAnchor.UpperCenter;
+        style.fontSize = 124;
+        style.alignment = TextAnchor.MiddleCenter;
         button = new GUIStyle();
         button.fixedWidth = Screen.width / 2;
         button.fixedHeight = Screen.height / 4;
+        button.alignment = TextAnchor.MiddleCenter;
     }
 
     // Update is called once per frame
@@ -25,22 +27,26 @@ public class MainMenu : MonoBehaviour {
     }
 
     void OnGUI() {
-        GUILayout.BeginArea(screen, style);
+        GUILayout.BeginArea(screen);
         GUILayout.BeginHorizontal();
         GUILayout.FlexibleSpace();
         GUILayout.BeginVertical();
+        GUILayout.FlexibleSpace();
         if(panel == 0) {
-            GUILayout.Label("The Moon is\nFollowing You!",style);
-            
-            if (GUILayout.Button("Start Game",button))
+            GUILayout.Label("The Moon is\nFollowing You", style);
+
+            GUILayout.FlexibleSpace();
+
+            if (GUILayout.Button(play_tex, button))
             {
                 Application.LoadLevel(1);
             }
-            if (GUILayout.Button("Exit", button))
+            if (GUILayout.Button(exit_tex, button))
             {
                 Application.Quit();
             }
         }
+        GUILayout.FlexibleSpace();
         GUILayout.EndVertical();
         GUILayout.FlexibleSpace();
         GUILayout.EndHorizontal();
