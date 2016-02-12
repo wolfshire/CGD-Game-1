@@ -41,3 +41,24 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Road
+    uniqueID: 2515670499
+    locked: 0
+  - name: Scrolling Sides
+    uniqueID: 585815771
+    locked: 0
+  - name: Player
+    uniqueID: 1912314987
+    locked: 0
+  - name: MoonProjectiles
+    uniqueID: 2070161313
+    locked: 0
+  - name: Moon
+    uniqueID: 3417624145
+    locked: 0
+  - name: Player Projectiles
+    uniqueID: 3912712195
+    locked: 0
+  - name: UI
+    uniqueID: 2014383699
+    locked: 0
