@@ -885,6 +885,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1347077714}
+  - 114: {fileID: 1347077715}
   m_Layer: 0
   m_Name: Car
   m_TagString: Untagged
@@ -905,6 +906,21 @@ Transform:
   - {fileID: 134527024}
   m_Father: {fileID: 870043890}
   m_RootOrder: 0
+--- !u!114 &1347077715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1347077713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc220814b1b437e42945e59eaa40e71a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  bounds: 2
+  bullet: {fileID: 174496, guid: 0ec208e9286a22d46b057c9ed345c313, type: 2}
+  cooldown: 0.3
 --- !u!1 &1500595584
 GameObject:
   m_ObjectHideFlags: 0
