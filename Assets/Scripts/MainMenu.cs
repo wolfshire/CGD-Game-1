@@ -20,6 +20,9 @@ public class MainMenu : MonoBehaviour {
         button.fixedWidth = Screen.width / 2;
         button.fixedHeight = Screen.height / 4;
         button.alignment = TextAnchor.MiddleCenter;
+        if(!PlayerPrefs.HasKey("highscore")){
+            PlayerPrefs.SetInt("highscore",0);
+        }
     }
 
     // Update is called once per frame
@@ -41,6 +44,7 @@ public class MainMenu : MonoBehaviour {
             {
                 Application.LoadLevel(1);
             }
+            GUILayout.Label("Highscore: " + PlayerPrefs.GetInt("highscore"), style);
             if (GUILayout.Button(exit_tex, button))
             {
                 Application.Quit();
