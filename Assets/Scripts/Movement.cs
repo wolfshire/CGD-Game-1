@@ -16,6 +16,14 @@ public class Movement : MonoBehaviour {
 	[SerializeField]
 	private float perlinSpeedChangeAmount = 5;
 
+	[SerializeField]
+	private float swerveDuration = 2;
+	[SerializeField]
+	private float swervePowerMultiplier = 4;
+	[SerializeField]
+	private float swerveFreqMultiplier = 4;
+	private float swerveTimer = 0;
+
 	private GameObject car;
 	private bool slowingMoon = false;
 
@@ -26,9 +34,16 @@ public class Movement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		float dir = Input.GetAxis ("Horizontal");
-		float random = Mathf.PerlinNoise (1234, Time.timeSinceLevelLoad * perlinMultiplier)*2-1;
-		float delta = dir + speed * random * perlinSpeedChangeAmount * Time.deltaTime;
+		float dir = Input.GetAxis ("Horizontal") * speed;
+		float random = (Mathf.PerlinNoise (1234, Time.timeSinceLevelLoad * perlinMultiplier * (swerveTimer > 0 ? swerveFreqMultiplier : 1))*2-1)  * perlinSpeedChangeAmount;
+		if (swerveTimer > 0) {
+			swerveTimer -= Time.deltaTime;
+			random *= swervePowerMultiplier;
+			if (swerveTimer < 0)
+				swerveTimer = 0;
+		}
+
+		float delta = dir * Time.deltaTime + random * Time.deltaTime; // Sum because dir can be zero
 
 		Vector3 pos = car.transform.localPosition;
 		pos.x += delta;
@@ -39,16 +54,18 @@ public class Movement : MonoBehaviour {
 				slowingMoon = true;
 				Globals.Instance.MoonSpeedMultipler += moonSpeedIncrease;
 				pos.y = 0.4f;
-				Debug.Log ("SLOW");
 			}
 		} else if (slowingMoon) {
 			slowingMoon = false;
 			Globals.Instance.MoonSpeedMultipler -= moonSpeedIncrease;
 			pos.y = 0;
-			Debug.Log ("NO SLOW");
 		}
 
 
 		car.transform.localPosition = pos;
+	}
+
+	void Swerve() {
+		swerveTimer = swerveDuration;
 	}
 }

@@ -171,6 +171,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 897144453}
+  boostDuration: 2
+  boostAmount: 4
 --- !u!4 &155455710
 Transform:
   m_ObjectHideFlags: 0
@@ -327,56 +329,6 @@ SpriteRenderer:
   m_Color: {r: 0.44404155, g: 0.6102941, b: 0.25578502, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!1001 &583378068
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1980088061}
-    m_Modifications:
-    - target: {fileID: 473330, guid: cefd5d8f336565c49a2586034d9096c7, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 473330, guid: cefd5d8f336565c49a2586034d9096c7, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 473330, guid: cefd5d8f336565c49a2586034d9096c7, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 473330, guid: cefd5d8f336565c49a2586034d9096c7, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 473330, guid: cefd5d8f336565c49a2586034d9096c7, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 473330, guid: cefd5d8f336565c49a2586034d9096c7, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 473330, guid: cefd5d8f336565c49a2586034d9096c7, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 473330, guid: cefd5d8f336565c49a2586034d9096c7, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 146864, guid: cefd5d8f336565c49a2586034d9096c7, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: cefd5d8f336565c49a2586034d9096c7, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &613179556 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 473330, guid: cefd5d8f336565c49a2586034d9096c7, type: 2}
-  m_PrefabInternal: {fileID: 583378068}
 --- !u!1 &706625799
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,12 +572,61 @@ Transform:
   m_LocalPosition: {x: 0, y: -3.47, z: 1.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1347077714}
+  - {fileID: 893063262}
   - {fileID: 1305987742}
   - {fileID: 1202673893}
   - {fileID: 255415798}
   m_Father: {fileID: 0}
   m_RootOrder: 5
+--- !u!1 &893063261
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 893063262}
+  - 114: {fileID: 893063263}
+  m_Layer: 0
+  m_Name: Player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &893063262
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 893063261}
+  m_LocalRotation: {x: -0.5860889, y: 0, z: 0, w: 0.81024677}
+  m_LocalPosition: {x: 0, y: 0.21, z: -0.63}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1347077714}
+  m_Father: {fileID: 870043890}
+  m_RootOrder: 0
+--- !u!114 &893063263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 893063261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5b7e30c38cfc5a4cb9a6a8073608022, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hardLimit: {x: -3.2, y: 3.2}
+  slowdownLimit: {x: -1.6, y: 1.6}
+  moonSpeedIncrease: 4
+  speed: 0.01
+  perlinMultiplier: 0.5
+  perlinSpeedChangeAmount: 0.2
+  swerveDuration: 2
+  swervePowerMultiplier: 20
+  swerveFreqMultiplier: 4
 --- !u!1 &897144453
 GameObject:
   m_ObjectHideFlags: 0
@@ -899,12 +900,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1347077713}
-  m_LocalRotation: {x: -0.5860889, y: 0, z: 0, w: 0.81024677}
-  m_LocalPosition: {x: 0, y: 0.21, z: -0.63}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 134527024}
-  m_Father: {fileID: 870043890}
+  m_Father: {fileID: 893063262}
   m_RootOrder: 0
 --- !u!114 &1347077715
 MonoBehaviour:
@@ -1002,7 +1003,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1830800581}
-  - 114: {fileID: 1830800582}
   m_Layer: 0
   m_Name: Moon Rail
   m_TagString: Untagged
@@ -1022,18 +1022,7 @@ Transform:
   m_Children:
   - {fileID: 519008473}
   m_Father: {fileID: 1980088061}
-  m_RootOrder: 1
---- !u!114 &1830800582
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1830800580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdbc33f72e775024b8850059e7f5fb6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_RootOrder: 0
 --- !u!1 &1835914861
 GameObject:
   m_ObjectHideFlags: 0
@@ -1060,7 +1049,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1980088061}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!1 &1980088060
 GameObject:
   m_ObjectHideFlags: 0
@@ -1072,7 +1061,7 @@ GameObject:
   - 114: {fileID: 1980088062}
   - 114: {fileID: 1980088063}
   m_Layer: 0
-  m_Name: Moon Container
+  m_Name: Moon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1088,7 +1077,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 613179556}
   - {fileID: 1830800581}
   - {fileID: 1835914862}
   m_Father: {fileID: 0}
@@ -1106,6 +1094,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distanceLimits: {x: -1.5, y: 10}
   speed: 0.08
+  asteroidBumpDuration: 2
+  asteroidBumpSpeed: -0.2
   moonGraphic: {fileID: 519008472}
 --- !u!114 &1980088063
 MonoBehaviour:
@@ -1118,7 +1108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 778456971f6de5c42bcb7e0a7ef8abac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnFrequencyLimits: {x: 0.2, y: 1.5}
+  spawnFrequencyLimits: {x: 3, y: 7}
   prefab: {fileID: 146864, guid: cefd5d8f336565c49a2586034d9096c7, type: 2}
   container: {fileID: 1835914861}
 --- !u!1 &2002686320
