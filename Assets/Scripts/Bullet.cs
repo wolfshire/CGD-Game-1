@@ -28,6 +28,7 @@ public class Bullet : MonoBehaviour {
         {
             Debug.Log("Hit asteroid");
             controller.GetComponent<GameManager>().ScoreUp();
+			o.SendMessage ("Shot", SendMessageOptions.DontRequireReceiver);
         }
 
     }

@@ -24,12 +24,12 @@ public class Movement : MonoBehaviour {
 	private float swerveFreqMultiplier = 4;
 	private float swerveTimer = 0;
 
+	[SerializeField]
 	private GameObject car;
 	private bool slowingMoon = false;
 
 	// Use this for initialization
 	void Start () {
-		car = this.transform.FindChild ("Car").gameObject;
 	}
 	
 	// Update is called once per frame
@@ -60,7 +60,6 @@ public class Movement : MonoBehaviour {
 			Globals.Instance.MoonSpeedMultipler -= moonSpeedIncrease;
 			pos.y = 0;
 		}
-
 
 		car.transform.localPosition = pos;
 	}
