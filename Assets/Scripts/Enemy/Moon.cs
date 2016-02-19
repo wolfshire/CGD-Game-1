@@ -24,7 +24,7 @@ public class Moon : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		SetPosition (moonPosition - speed * Time.deltaTime);
+		SetPosition (moonPosition - speed * Time.deltaTime * Globals.Instance.MoonSpeedMultipler);
 	}
 
 	private void SetPosition(float val){
