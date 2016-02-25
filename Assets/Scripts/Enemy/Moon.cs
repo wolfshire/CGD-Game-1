@@ -12,6 +12,12 @@ public class Moon : MonoBehaviour {
 	private float speed;
 
 	[SerializeField]
+	private float asteroidBumpDuration;
+	[SerializeField]
+	private float asteroidBumpSpeed;
+	private float bumpTimer = 0;
+
+	[SerializeField]
 	private GameObject moonGraphic;
 
 
@@ -24,7 +30,15 @@ public class Moon : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		SetPosition (moonPosition - speed * Time.deltaTime);
+		float nowSpeed = speed;
+
+		if (bumpTimer > 0) {
+			nowSpeed = asteroidBumpSpeed;
+			bumpTimer -= Time.deltaTime;
+			if (bumpTimer < 0)
+				bumpTimer = 0;
+		}
+		SetPosition (moonPosition - nowSpeed * Time.deltaTime * Globals.Instance.MoonSpeedMultipler);
 	}
 
 	private void SetPosition(float val){
@@ -36,5 +50,9 @@ public class Moon : MonoBehaviour {
 		if (moonPosition <= distanceLimits.x) {
 			GameObject.Find ("Globals").SendMessage ("OnGameOver");
 		}
+	}
+
+	void AsteroidBump() {
+		bumpTimer += asteroidBumpDuration;
 	}
 }

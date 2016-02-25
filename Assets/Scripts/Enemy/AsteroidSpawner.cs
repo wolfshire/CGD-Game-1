@@ -26,7 +26,7 @@ public class AsteroidSpawner : MonoBehaviour {
 		if (timeUntilSpawn <= 0) {
 			timeUntilSpawn = Random.Range (spawnFrequencyLimits.x, spawnFrequencyLimits.y);
 			GameObject inst = Instantiate (prefab);
-			inst.transform.SetParent (container.transform);
+			inst.transform.SetParent (container.transform, false);
 
 			if (Random.Range (0f, 1f) < 0.5) { // Flip it randomly
 				inst.transform.localScale = new Vector3 (-1, 1, 1);

@@ -26,16 +26,6 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //moving left
-        if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) && transform.position.x > -bounds)
-        {
-            transform.Translate(Vector3.left * Time.deltaTime * speed);
-        }
-        //moving right
-        if ((Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) && transform.position.x < bounds)
-        {
-            transform.Translate(Vector3.right * Time.deltaTime * speed);
-        }
         //mouse click
         if (Input.GetMouseButton(0) && canShoot)
         {

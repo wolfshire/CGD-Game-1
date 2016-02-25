@@ -1,73 +1,199 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="792px"
-	 height="612px" viewBox="0 0 792 612" enable-background="new 0 0 792 612" xml:space="preserve">
-<g id="Moon">
-	
-		<ellipse fill="#BABABA" stroke="#000000" stroke-width="4" stroke-miterlimit="10" cx="152.852" cy="133.232" rx="122.414" ry="122.759"/>
-	<path fill="#FAF290" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M78.333,168.556l41.379,22.069
-		c0,0-18.032,9.15-23.448,6.517C91.477,194.815,78.333,168.556,78.333,168.556z"/>
-	<path fill="#FAF290" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M215.022,168.556l-41.379,22.069
-		c0,0,18.032,8.15,23.448,5.517C201.878,193.815,215.022,168.556,215.022,168.556z"/>
-	<g>
-		<g>
-			<path d="M135.373,172.901c4.28-3.447,6.47-7.709,8.057-12.884c1.234-4.023,2.064-9.687,1.014-13.849
-				c-0.603,0.791-1.205,1.582-1.808,2.373c4.208,0.01,8.415,0.094,12.622,0.114c-0.603-0.459-1.205-0.918-1.808-1.377
-				c1.439,8.858,2.384,18.929,0,27.689c0.918-0.374,1.836-0.747,2.754-1.121c-2.253-1.152-3.789-2.783-5.361-4.715
-				c-1.526-1.877-4.163,0.793-2.652,2.652c1.8,2.214,3.57,3.998,6.12,5.302c1.067,0.546,2.423,0.098,2.754-1.121
-				c2.578-9.472,1.554-20.117,0-29.683c-0.132-0.814-1.042-1.373-1.808-1.377c-4.208-0.019-8.415-0.104-12.622-0.114
-				c-1.239-0.003-2.105,1.197-1.808,2.373c0.796,3.156-0.074,7.331-0.624,10.5c-0.87,5.008-3.574,9.437-7.482,12.584
-				C130.838,171.767,133.509,174.402,135.373,172.901L135.373,172.901z"/>
-		</g>
-	</g>
-	<g>
-		<g>
-			<path d="M142.636,154.575c4.471,0,8.942,0,13.413,0c2.418,0,2.418-3.75,0-3.75c-4.471,0-8.942,0-13.413,0
-				C140.218,150.825,140.218,154.575,142.636,154.575L142.636,154.575z"/>
-		</g>
-	</g>
-	<g>
-		<g>
-			<path d="M142.012,160.039c4.812,0.456,9.65,0.455,14.479,0.455c2.418,0,2.418-3.75,0-3.75c-4.83-0.001-9.667,0-14.479-0.455
-				C139.604,156.061,139.626,159.813,142.012,160.039L142.012,160.039z"/>
-		</g>
-	</g>
-	<path fill="#BABABA" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M96.252,213.441c0,0,12.656,0.156,14.667,3.333
-		c1.644,2.597-2.667,12-2.667,12"/>
-	<path fill="#BABABA" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M189.082,212.887c0,0-11.553,0.793-12.585,3.923
-		c-1.032,3.13,7.784,10.639,7.784,10.639"/>
-	<path fill="#BABABA" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M110.919,216.775c0,0,19.791-4.652,26-4.667
-		c15-0.036,39.578,4.702,39.578,4.702"/>
-</g>
-<g id="Missile">
-	<polygon fill="#ED1F24" stroke="#000000" stroke-width="4" stroke-miterlimit="10" points="418.048,143.337 429.942,144.666 
-		436.644,163.726 436.775,142.415 421.234,125.607 	"/>
-	<path fill="#BABABA" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M405.109,53.108
-		c0,0-15.494,34.111-17.082,40.541c-1.378,5.578,0.325,20.341,2.372,33.709c2.048,13.368,4.44,25.342,4.44,25.342h20.405
-		c0,0,10.12-49.22,6.566-60.402C419.818,86.027,405.109,53.108,405.109,53.108z"/>
-	<polygon fill="#ED1F24" stroke="#000000" stroke-width="4" stroke-miterlimit="10" points="392.319,144.666 380.091,145.075 
-		373.321,163.726 373.191,142.415 388.862,125.607 	"/>
-</g>
-<g id="Weapon">
-	<polygon fill="#BFBEBE" stroke="#000000" stroke-width="4" stroke-miterlimit="10" points="614.333,223 512.023,222.667 
-		512.023,152.366 614.333,152.7 	"/>
-	<polyline fill="#BFBEBE" stroke="#000000" stroke-width="4" stroke-miterlimit="10" points="551.667,114.333 556,93 567.667,93 
-		569.667,114.333 551.667,114.333 	"/>
-	<polygon fill="#BFBEBE" stroke="#000000" stroke-width="4" stroke-miterlimit="10" points="606,122.333 522.051,121.991 
-		512.384,152.358 614.333,152.7 	"/>
-	<polygon fill="#BFBEBE" stroke="#000000" stroke-width="4" stroke-miterlimit="10" points="571.667,93 551.667,93 547.203,82.494 
-		575.87,82.494 	"/>
-</g>
-<g id="Layer_4">
-	<polygon fill="#686868" stroke="#000000" stroke-width="4" stroke-miterlimit="10" points="288,292.667 307,241.667 373,242 
-		392.667,293 	"/>
-	<polygon fill="#ED1F24" stroke="#000000" stroke-width="4" stroke-miterlimit="10" points="282.333,289.333 399,289.333 
-		411.667,349.333 433,395.667 433,436 247.667,436.667 247.667,397 267.667,349 	"/>
-	<polygon fill="#A9D2F0" stroke="#000000" stroke-width="4" stroke-miterlimit="10" points="291.333,296.667 389.333,296.667 
-		401,340.333 279,340.667 	"/>
-	<rect x="247.333" y="402.667" fill="#545554" stroke="#000000" stroke-width="4" stroke-miterlimit="10" width="186" height="26"/>
-	<ellipse fill="#FEEB00" stroke="#000000" stroke-width="4" stroke-miterlimit="10" cx="418.833" cy="416" rx="9.167" ry="9.333"/>
-	<ellipse fill="#FEEB00" stroke="#000000" stroke-width="4" stroke-miterlimit="10" cx="262.833" cy="416" rx="9.167" ry="9.333"/>
-</g>
-</svg>
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   x="0px"
+   y="0px"
+   width="792px"
+   height="612px"
+   viewBox="0 0 792 612"
+   enable-background="new 0 0 792 612"
+   xml:space="preserve"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="Base Assets.svg"><metadata
+     id="metadata68"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+     id="defs66" /><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview64"
+     showgrid="false"
+     inkscape:zoom="1.028519"
+     inkscape:cx="317.61027"
+     inkscape:cy="367.94701"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" /><g
+     id="Moon"
+     inkscape:export-xdpi="184.82648"
+     inkscape:export-ydpi="184.82648"><ellipse
+       stroke-miterlimit="10"
+       cx="152.852"
+       cy="133.232"
+       rx="122.414"
+       ry="122.759"
+       id="ellipse5"
+       stroke-width="4"
+       stroke="#000000"
+       fill="#BABABA" /><path
+       stroke-miterlimit="10"
+       d="M78.333,168.556l41.379,22.069   c0,0-18.032,9.15-23.448,6.517C91.477,194.815,78.333,168.556,78.333,168.556z"
+       id="path7"
+       stroke-width="3"
+       stroke="#000000"
+       fill="#FAF290" /><path
+       stroke-miterlimit="10"
+       d="M215.022,168.556l-41.379,22.069   c0,0,18.032,8.15,23.448,5.517C201.878,193.815,215.022,168.556,215.022,168.556z"
+       id="path9"
+       stroke-width="3"
+       stroke="#000000"
+       fill="#FAF290" /><g
+       id="g11"><g
+         id="g13"><path
+           d="M135.373,172.901c4.28-3.447,6.47-7.709,8.057-12.884c1.234-4.023,2.064-9.687,1.014-13.849     c-0.603,0.791-1.205,1.582-1.808,2.373c4.208,0.01,8.415,0.094,12.622,0.114c-0.603-0.459-1.205-0.918-1.808-1.377     c1.439,8.858,2.384,18.929,0,27.689c0.918-0.374,1.836-0.747,2.754-1.121c-2.253-1.152-3.789-2.783-5.361-4.715     c-1.526-1.877-4.163,0.793-2.652,2.652c1.8,2.214,3.57,3.998,6.12,5.302c1.067,0.546,2.423,0.098,2.754-1.121     c2.578-9.472,1.554-20.117,0-29.683c-0.132-0.814-1.042-1.373-1.808-1.377c-4.208-0.019-8.415-0.104-12.622-0.114     c-1.239-0.003-2.105,1.197-1.808,2.373c0.796,3.156-0.074,7.331-0.624,10.5c-0.87,5.008-3.574,9.437-7.482,12.584     C130.838,171.767,133.509,174.402,135.373,172.901L135.373,172.901z"
+           id="path15" /></g></g><g
+       id="g17"><g
+         id="g19"><path
+           d="M142.636,154.575c4.471,0,8.942,0,13.413,0c2.418,0,2.418-3.75,0-3.75c-4.471,0-8.942,0-13.413,0     C140.218,150.825,140.218,154.575,142.636,154.575L142.636,154.575z"
+           id="path21" /></g></g><g
+       id="g23"><g
+         id="g25"><path
+           d="M142.012,160.039c4.812,0.456,9.65,0.455,14.479,0.455c2.418,0,2.418-3.75,0-3.75c-4.83-0.001-9.667,0-14.479-0.455     C139.604,156.061,139.626,159.813,142.012,160.039L142.012,160.039z"
+           id="path27" /></g></g><path
+       stroke-miterlimit="10"
+       d="M96.252,213.441c0,0,12.656,0.156,14.667,3.333   c1.644,2.597-2.667,12-2.667,12"
+       id="path29"
+       stroke-width="4"
+       stroke="#000000"
+       fill="#BABABA" /><path
+       stroke-miterlimit="10"
+       d="M189.082,212.887c0,0-11.553,0.793-12.585,3.923   c-1.032,3.13,7.784,10.639,7.784,10.639"
+       id="path31"
+       stroke-width="4"
+       stroke="#000000"
+       fill="#BABABA" /><path
+       stroke-miterlimit="10"
+       d="M110.919,216.775c0,0,19.791-4.652,26-4.667   c15-0.036,39.578,4.702,39.578,4.702"
+       id="path33"
+       stroke-width="4"
+       stroke="#000000"
+       fill="#BABABA" /></g><g
+     id="Missile"
+     inkscape:export-xdpi="184.82648"
+     inkscape:export-ydpi="184.82648"><polygon
+       fill="#ED1F24"
+       stroke="#000000"
+       stroke-width="4"
+       stroke-miterlimit="10"
+       points="418.048,143.337 429.942,144.666    436.644,163.726 436.775,142.415 421.234,125.607  "
+       id="polygon36" /><path
+       fill="#BABABA"
+       stroke="#000000"
+       stroke-width="4"
+       stroke-miterlimit="10"
+       d="M405.109,53.108   c0,0-15.494,34.111-17.082,40.541c-1.378,5.578,0.325,20.341,2.372,33.709c2.048,13.368,4.44,25.342,4.44,25.342h20.405   c0,0,10.12-49.22,6.566-60.402C419.818,86.027,405.109,53.108,405.109,53.108z"
+       id="path38" /><polygon
+       fill="#ED1F24"
+       stroke="#000000"
+       stroke-width="4"
+       stroke-miterlimit="10"
+       points="392.319,144.666 380.091,145.075    373.321,163.726 373.191,142.415 388.862,125.607  "
+       id="polygon40" /></g><g
+     id="Weapon"><g
+       id="g3400"
+       inkscape:export-xdpi="184.82648"
+       inkscape:export-ydpi="184.82648"><polygon
+         id="polygon43"
+         points="614.333,223 512.023,222.667    512.023,152.366 614.333,152.7  "
+         stroke-miterlimit="10"
+         stroke-width="4"
+         stroke="#000000"
+         fill="#BFBEBE" /><polygon
+         id="polygon47"
+         points="606,122.333 522.051,121.991    512.384,152.358 614.333,152.7  "
+         stroke-miterlimit="10"
+         stroke-width="4"
+         stroke="#000000"
+         fill="#BFBEBE" /></g><g
+       id="g3396"
+       inkscape:export-xdpi="184.82648"
+       inkscape:export-ydpi="184.82648"><polyline
+         id="polyline45"
+         points="551.667,114.333 556,93 567.667,93    569.667,114.333 551.667,114.333  "
+         stroke-miterlimit="10"
+         stroke-width="4"
+         stroke="#000000"
+         fill="#BFBEBE" /><polygon
+         id="polygon49"
+         points="571.667,93 551.667,93 547.203,82.494    575.87,82.494  "
+         stroke-miterlimit="10"
+         stroke-width="4"
+         stroke="#000000"
+         fill="#BFBEBE" /></g></g><g
+     id="Layer_4"
+     inkscape:export-xdpi="184.82648"
+     inkscape:export-ydpi="184.82648"><polygon
+       fill="#686868"
+       stroke="#000000"
+       stroke-width="4"
+       stroke-miterlimit="10"
+       points="288,292.667 307,241.667 373,242    392.667,293  "
+       id="polygon52" /><polygon
+       fill="#ED1F24"
+       stroke="#000000"
+       stroke-width="4"
+       stroke-miterlimit="10"
+       points="282.333,289.333 399,289.333    411.667,349.333 433,395.667 433,436 247.667,436.667 247.667,397 267.667,349  "
+       id="polygon54" /><polygon
+       fill="#A9D2F0"
+       stroke="#000000"
+       stroke-width="4"
+       stroke-miterlimit="10"
+       points="291.333,296.667 389.333,296.667    401,340.333 279,340.667  "
+       id="polygon56" /><rect
+       x="247.333"
+       y="402.667"
+       fill="#545554"
+       stroke="#000000"
+       stroke-width="4"
+       stroke-miterlimit="10"
+       width="186"
+       height="26"
+       id="rect58" /><ellipse
+       fill="#FEEB00"
+       stroke="#000000"
+       stroke-width="4"
+       stroke-miterlimit="10"
+       cx="418.833"
+       cy="416"
+       rx="9.167"
+       ry="9.333"
+       id="ellipse60" /><ellipse
+       fill="#FEEB00"
+       stroke="#000000"
+       stroke-width="4"
+       stroke-miterlimit="10"
+       cx="262.833"
+       cy="416"
+       rx="9.167"
+       ry="9.333"
+       id="ellipse62" /></g></svg>
