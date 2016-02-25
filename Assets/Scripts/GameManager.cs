@@ -67,8 +67,8 @@ public class GameManager : MonoBehaviour {
         Application.LoadLevel(0);
     }
 
-    public void ScoreUp()
+    public void ScoreUp(int n)
     {
-        score += 20;
+        score += n;
     }
 }

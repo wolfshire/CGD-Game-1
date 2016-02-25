@@ -27,9 +27,8 @@ public class Bullet : MonoBehaviour {
         if (o.tag == "Asteroid")
         {
             Debug.Log("Hit asteroid");
-            controller.GetComponent<GameManager>().ScoreUp();
+            controller.GetComponent<GameManager>().ScoreUp(5);
 			o.SendMessage ("Shot", SendMessageOptions.DontRequireReceiver);
         }
-
     }
 }
