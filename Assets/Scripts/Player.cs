@@ -47,4 +47,11 @@ public class Player : MonoBehaviour
         }
 
     }
+
+	void OnTriggerEnter(Collider c){
+		Globals.Instance.Boost ();
+		this.gameObject.SendMessage ("Swerve");
+		Destroy (c.gameObject);
+		Debug.Log ("HIT");
+	}
 }
