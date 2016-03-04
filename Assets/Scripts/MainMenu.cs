@@ -5,6 +5,7 @@ public class MainMenu : MonoBehaviour {
 
     public GameObject titlePanel;
     public GameObject scorePanel;
+    public GameObject helpPanel;
     int state = 0;
     public Text scoreboard;
 
@@ -62,9 +63,17 @@ public class MainMenu : MonoBehaviour {
         state = 1;
     }
 
+    public void Help()
+    {
+        titlePanel.SetActive(false);
+        helpPanel.SetActive(true);
+        state = 2;
+    }
+
     public void MainScreen()
     {
         scorePanel.SetActive(false);
+        helpPanel.SetActive(false);
         titlePanel.SetActive(true);
         state = 0;
     }
