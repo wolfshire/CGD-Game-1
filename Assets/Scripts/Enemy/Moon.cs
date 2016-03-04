@@ -20,7 +20,6 @@ public class Moon : MonoBehaviour {
 	[SerializeField]
 	private GameObject moonGraphic;
 
-
 	private float moonPosition;
 
 	// Use this for initialization
@@ -49,6 +48,7 @@ public class Moon : MonoBehaviour {
 
 		if (moonPosition <= distanceLimits.x) {
 			GameObject.Find ("Globals").SendMessage ("OnGameOver");
+            Data.gameState = 1;
 		}
 	}
 

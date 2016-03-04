@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     [SerializeField]
     GameObject bullet;
     Vector3 pos;
+    AudioSource audio;
 
     float shotTimer = 0;
     bool canShoot = true;
@@ -21,6 +22,7 @@ public class Player : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        audio = gameObject.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -34,6 +36,7 @@ public class Player : MonoBehaviour
             pos.z = 10.0f;       // we want 2m away from the camera position
             pos = Camera.main.ScreenToWorldPoint(pos);
             Instantiate(bullet, pos, Quaternion.identity);
+            audio.Play();
         }
         //cooldown on shots
         if (!canShoot)
