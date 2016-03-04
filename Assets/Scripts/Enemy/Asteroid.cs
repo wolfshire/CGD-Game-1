@@ -41,10 +41,10 @@ public class Asteroid : MonoBehaviour {
 	}
 	// Called by custom AnimationEvent
 	void OnAnimationEnd() {
-		if (!returned) {
+		/*if (!returned) { 
 			Globals.Instance.Boost ();
 			GameObject.Find ("Player").SendMessage ("Swerve");
 			Destroy (this.gameObject);
-		}
+		} */
 	}
 }
