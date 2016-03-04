@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1319,7 +1319,12 @@ GameObject:
   - 4: {fileID: 1625689909}
   - 114: {fileID: 1625689911}
   - 114: {fileID: 1625689910}
+<<<<<<< HEAD
   m_Layer: 8
+=======
+  - 82: {fileID: 1625689912}
+  m_Layer: 0
+>>>>>>> 1888dc1fce73bfc6dc081deb856421e54fde82fd
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1374,7 +1379,121 @@ MonoBehaviour:
   speed: 5
   bounds: 2
   bullet: {fileID: 174496, guid: 0ec208e9286a22d46b057c9ed345c313, type: 2}
+<<<<<<< HEAD
   cooldown: 0.3
+=======
+  cooldown: .300000012
+--- !u!82 &1625689912
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1625689908}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 33c9e104425d1ed4bb337a2a6090c4bd, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: .25
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!1 &1678972428
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1678972430}
+  - 114: {fileID: 1678972429}
+  m_Layer: 0
+  m_Name: Pickup Spawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1678972429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1678972428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce4bad1465ca23140b85d66eaba93989, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickup: {fileID: 121810, guid: fb1502993c08d3247a47c84e8f132c02, type: 2}
+--- !u!4 &1678972430
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1678972428}
+  m_LocalRotation: {x: .586088896, y: 0, z: 0, w: .810246766}
+  m_LocalPosition: {x: 0, y: -4.59000015, z: 5.42000008}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 773637795}
+  m_RootOrder: 0
+>>>>>>> 1888dc1fce73bfc6dc081deb856421e54fde82fd
 --- !u!1 &1830800580
 GameObject:
   m_ObjectHideFlags: 0
@@ -1543,8 +1662,13 @@ Camera:
   m_GameObject: {fileID: 2002686320}
   m_Enabled: 1
   serializedVersion: 2
+<<<<<<< HEAD
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
+=======
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: .0680147111, g: .138786763, b: .25, a: .0196078438}
+>>>>>>> 1888dc1fce73bfc6dc081deb856421e54fde82fd
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
