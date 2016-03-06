@@ -9,9 +9,15 @@ public class GameManager : MonoBehaviour {
     public Text scoreboard;
 
 	// Use this for initialization
-	void Start () {
+    void Start()
+    {
         Data.gameState = 0;
-	}
+        if (!PlayerPrefs.HasKey("highscore0")) PlayerPrefs.SetInt("highscore0", 0);
+        if (!PlayerPrefs.HasKey("highscore1")) PlayerPrefs.SetInt("highscore1", 0);
+        if (!PlayerPrefs.HasKey("highscore2")) PlayerPrefs.SetInt("highscore2", 0);
+        if (!PlayerPrefs.HasKey("highscore3")) PlayerPrefs.SetInt("highscore3", 0);
+        if (!PlayerPrefs.HasKey("highscore4")) PlayerPrefs.SetInt("highscore4", 0);
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -22,7 +28,7 @@ public class GameManager : MonoBehaviour {
         }
 	}
 
-    void CheckScore()
+    public void CheckScore()
     {
         if ((int)score > PlayerPrefs.GetInt("highscore0"))
         {

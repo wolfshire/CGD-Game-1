@@ -20,11 +20,14 @@ public class Moon : MonoBehaviour {
 	[SerializeField]
 	private GameObject moonGraphic;
 
+    GameObject gameManager;
+
 	private float moonPosition;
 
 	// Use this for initialization
 	void Start () {
 		SetPosition (distanceLimits.y);
+        gameManager = GameObject.FindGameObjectWithTag("GameController");
 	}
 	
 	// Update is called once per frame
@@ -48,6 +51,7 @@ public class Moon : MonoBehaviour {
 
 		if (moonPosition <= distanceLimits.x) {
 			GameObject.Find ("Globals").SendMessage ("OnGameOver");
+            if(Data.gameState == 0) gameManager.GetComponent<GameManager>().CheckScore();
             Data.gameState = 1;
 		}
 	}
