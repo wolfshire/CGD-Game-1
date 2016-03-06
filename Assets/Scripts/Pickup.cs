@@ -13,12 +13,12 @@ public class Pickup : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.Translate(Vector3.up * 10 * Time.deltaTime);
+        transform.Translate(Vector3.forward * 10 * Time.deltaTime);
 	}
 
     void OnTriggerEnter(Collider o)
     {
-        if (o.tag == "Car")
+        if (o.tag == "Player")
         {
             Debug.Log("Hit powerup");
             controller.GetComponent<GameManager>().ScoreUp(10);
